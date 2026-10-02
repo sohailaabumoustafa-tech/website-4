@@ -40,7 +40,35 @@ item6.addEventListener("drop" ,() =>{
 
 
 
+let selectedFlower = null
 
+
+flower1.addEventListener("touchend", () => { selectedFlower = flower1 })
+flower2.addEventListener("touchend", () => { selectedFlower = flower2 })
+flower3.addEventListener("touchend", () => { selectedFlower = flower3 })
+flower4.addEventListener("touchend", () => { selectedFlower = flower4 })
+flower5.addEventListener("touchend", () => { selectedFlower = flower5 })
+flower6.addEventListener("touchend", () => { selectedFlower = flower6 })
+
+
+item1.addEventListener("touchend", () => {
+    if(selectedFlower) item1.appendChild(selectedFlower)
+})
+item2.addEventListener("touchend", () => {
+    if(selectedFlower) item2.appendChild(selectedFlower)
+})
+item3.addEventListener("touchend", () => {
+    if(selectedFlower) item3.appendChild(selectedFlower)
+})
+item4.addEventListener("touchend", () => {
+    if(selectedFlower) item4.appendChild(selectedFlower)
+})
+item5.addEventListener("touchend", () => {
+    if(selectedFlower) item5.appendChild(selectedFlower)
+})
+item6.addEventListener("touchend", () => {
+    if(selectedFlower) item6.appendChild(selectedFlower)
+})
 
 
 
